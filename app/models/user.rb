@@ -42,7 +42,7 @@ class User < ActiveRecord::Base
   end
 
   def self.create_unique_string
-    SecureRandom.uud
+    SecureRandom.uid
   end
 
   def update_with_password(params, *options)
