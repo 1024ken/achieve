@@ -17,7 +17,7 @@
     </div>
     <%= render partial: 'comments/form', locals: { comment: @comment, blog: @blog } %>
     <% if current_user.id == @blog.user_id %>
-      <%= link_to '編集', edit_blog_path(@blog) %> |
+      <%= link_to '', edit_blog_path(@blog) %>
     <% end %>
     <%= link_to '戻る', blogs_path %>
   </div>
