@@ -8,7 +8,6 @@
       <p>本文:<%= @blog.content %></p>
       <%= f.submit "登録" %>
     <% end %>
-    
     <%= form_for(@blog, url: new_blog_path, method: 'get') do |f| %>
       <%= f.hidden_field :title %>
       <%= f.hidden_field :content %>

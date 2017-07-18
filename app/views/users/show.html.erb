@@ -1,0 +1,10 @@
+<div class="container">
+  <h3>User detail</h3>
+  <div class="container-child col-md-2 col-sm-4 col-xs-6 ">
+    <%= link_to profile_img(@user) %>
+    <%= @user.name %>
+    <%= @user.email %>
+    <%= render 'follow_list_form', user: @user %>
+    <%= render 'follower_list_form', user: @user %>
+  </div>
+</div>

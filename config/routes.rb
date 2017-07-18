@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'relationships/create'
+
+  get 'relationships/destroy'
+
+
+  resources :relationships, only: [:create, :destroy]
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
     registrations: "users/registrations",
@@ -8,12 +14,14 @@ Rails.application.routes.draw do
     resources :comments
     post :confirm, on: :collection
   end
+
   resources :contacts, only: [:new, :create] do
     collection do
       post :confirm
     end
   end
 
+  resources :users, only: [:index, :show]
   root 'top#index'
 
   if Rails.env.development?
