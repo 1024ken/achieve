@@ -2,3 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.profile {
+  width: 180px;
+  height: 150px;
+}
+
+.col-sm-12 {
+  width: 200px;
+  height: 220px;
+  padding: 0px, 0px, 0px, 0px
+}
+
+.col-sm-12 col-xs-6 {
+  width: 120px;
+  height: 160px;
+}
