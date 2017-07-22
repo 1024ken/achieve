@@ -56,8 +56,11 @@ group :development do
   gem 'dotenv-rails'
 end
 
- gem 'omniauth'
- gem 'omniauth-twitter'
- gem 'omniauth-facebook'
- gem 'carrierwave'
- gem 'mini_magick'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'hirb'
+gem 'hirb-unicode'
+gem 'pusher'
