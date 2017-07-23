@@ -3,7 +3,6 @@ ready = ->
     element = $('#page-top-btn')
     visible = element.is(':visible')
     height = $(window).scrollTop()
-    console.log(height)
     if height > 400
       element.fadeIn() if !visible
     else
