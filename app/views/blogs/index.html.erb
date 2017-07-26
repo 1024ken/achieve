@@ -6,7 +6,9 @@
     <% @blogs.each do |blog| %>
       <div class="row">
         <p><%= blog.user.name%></p>
-        <h4><strong><%= blog.title %></strong></h4>
+        <%= link_to blog_path(blog) do %>
+          <h4><strong><%= blog.title %></strong></h4>
+        <% end %>
         <p><%= blog.content %></p>
         <div class="img src">
           <%= profile_img(blog.user) %>
