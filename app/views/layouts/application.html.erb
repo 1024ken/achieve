@@ -40,6 +40,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to notifications_index_path do %>
+                  <i class="fa fa-bell fa-1x"><%= @notifications_count %></i>
+                <% end %></li>
               <li><%= link_to "お問い合わせ", new_contact_path %></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -48,9 +51,6 @@
                   <li><%= link_to "poem", poems_path %></li>
                   <li><%= link_to 'ユーザー一覧', users_path if user_signed_in? %></li>
                   <li><%= link_to "メッセージ", conversations_path %></li>
-                  <%= link_to notifications_index_path class: "navbar-brand" do %>
-                    <i class="fa fa-bell fa-1x"><%= @notifications_count %></i>
-                  <% end %>
                 </ul>
               </li>
               <% if user_signed_in? %>
