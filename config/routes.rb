@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'top#index'
+
   get 'notifications/index'
 
   get 'relationships/create'
@@ -29,7 +31,6 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:index, :show]
-  root 'top#index'
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
