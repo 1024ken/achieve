@@ -39,8 +39,8 @@ gem 'activeresource'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-group :development do
+gem 'therubyracer', platforms: :ruby
+group :development, :test do
   gem 'letter_opener_web'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,6 +54,11 @@ group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'dotenv-rails'
+  gem 'capistrano', '3.6.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'omniauth'
@@ -65,3 +70,5 @@ gem 'hirb'
 gem 'hirb-unicode'
 gem 'pusher'
 gem 'fog'
+gem 'dotenv-rails'
+gem 'unicorn'
