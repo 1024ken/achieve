@@ -1,14 +1,12 @@
-
-<h1>ブログ一覧</h1>
-
+<h1>問い合わせ一覧</h1>
 <%= form_for(@contact) do |f| %>
- <%= f.label :name %>
- <%= f.text_field :name %>
- <br>
- <%= f.label :email %>
- <%= f.text_field :email %>
- <br>
- <%= f.label :content %>
- <%= f.text_field :content %>
- <%= f.submit %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
 <% end %>
