@@ -13,7 +13,6 @@
         cluster: 'ap1',
         encrypted: true
          });
-        
          var channel = pusher.subscribe("user_<%= current_user.id %>_channel");
          channel.bind('comment_created', function(data) {
            alert(data.message);
