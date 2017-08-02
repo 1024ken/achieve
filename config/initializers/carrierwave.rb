@@ -15,7 +15,7 @@ CarrierWave.configure do |config|
     config.fog_directory = 'achieve-productiuon'
     config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/achieve-productiuon'
   when 'development'
-    config.fog_directory = 'achieve-productiuon'
+    config.fog_directory = 'achieve-development-sam'
     config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/achieve-development-sam'
   end
 end

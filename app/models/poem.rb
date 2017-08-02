@@ -1,3 +1,3 @@
 class Poem < ActiveResource::Base
-  self.site = "https://peaceful-chamber-74573.herokuapp.com"
+  self.site = "https://secret-citadel-47524.herokuapp.com/"
 end

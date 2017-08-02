@@ -1,11 +1,10 @@
 <div class="container">
- <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
-  <% @poems.each do |poem| %>
-   <%= poem.title %>
-   <%= poem.content %>
-
-  <%= link_to 'Show', poem_path(poem.id) , class: 'btn btn-primary btn-block' %>
-  <%= link_to 'Back', root_path , class: 'btn btn-primary btn-block' %>
-<% end %>
- </div>
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+    <% @poems.each do |poem| %>
+      <%= poem.title %>
+      <%= poem.content %>
+      <%= link_to '表示', poem_path(poem.id) , class: 'btn btn-primary btn-block' %>
+      <%= link_to '戻る', root_path , class: 'btn btn-primary btn-block' %>
+    <% end %>
+  </div>
 </div>
