@@ -4,6 +4,8 @@ header {
   height: 54px;
 }
 
+
+
 .navbar-default {
     border: 0;
 }
@@ -77,8 +79,15 @@ header {
   padding-bottom: 185px;
 }
 
-html,body{
-     height:100%;
+.function-images {
+  width: 100%;
+  display: table;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+
+.function-image {
+  width: 100%;
 }
 
 wrap{
@@ -92,14 +101,11 @@ wrap{
 footer {
   width: 100%;
   background-color:#2c3e50;
-  height: 80px;
-  border: 0;
   padding: 20px 0 10px 0;
   color: white;
-  margin-bottom: 0px;
-  padding-bottom: 10px;
+  margin: auto;
   font-size: 12px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 
