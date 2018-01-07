@@ -20,6 +20,20 @@ class CommentsController < ApplicationController
     end
   end
 
+  def edit
+    @comment = Comment.find(params[:id])
+    @blog = @comment.blog
+  end
+
+  def update
+    @comment = Comment.find(params[:id])
+    if @comment.update(comment_params)
+      redirect_to blogs_path, notice: "コメントを更新しました！"
+    else
+      render "edit"
+    end
+  end
+
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
